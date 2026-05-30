@@ -1,0 +1,94 @@
+body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #222;
+        background-color: #fff;
+      }
+      .bg-cart {
+        background: #ffe8a1;
+      }
+      .bg-banner1 {
+        background: #fef6d9;
+      }
+
+      /* Cấu hình cụm dấu chấm tròn Hero Banner chính */
+      .hero-indicators {
+        bottom: 15px !important;
+        margin: 0 !important;
+      }
+      @media (min-width: 768px) {
+        .hero-indicators {
+          bottom: auto !important;
+          top: 72% !important;
+        }
+      }
+      .hero-indicators [data-bs-target] {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #000;
+        opacity: 0.2;
+        margin: 0 5px;
+        border: none;
+      }
+      .hero-indicators .active {
+        opacity: 1;
+      }
+
+      /*thanh trượt Denim thành đường ray liền mạch 100% chạy từng nấc mượt mà */
+      .denim-indicators {
+        bottom: -45px;
+        margin: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #e9ecef; /*thanh nền xám làm đường ray */
+        display: flex;
+        position: relative;
+        border: none;
+        padding: 0;
+      }
+
+      /* ẨN HOÀN TOÀN màu sắc hiển thị của button gốc để không bị đè thanh */
+      .denim-indicators [data-bs-target] {
+        flex: 1;
+        height: 30px;
+        position: relative;
+        top: -14px;
+        background-color: transparent !important; /* Ép trong suốt */
+        border: none !important; /* Xóa border mặc định */
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        opacity: 1 !important;
+      }
+
+      /* Đây là thanh trượt màu đen duy nhất chạy trên đường ray */
+      .denim-indicators::after {
+        content: "";
+        position: absolute;
+        top: 0; /* Đưa về đúng tầng của đường ray height 2px */
+        height: 2px;
+        width: 33.333%; /* Thay đổi ở đây: Đổi từ 60px thành 33.333% để bằng khít 1 nấc */
+        background-color: #000; /* Màu cục trượt đen */
+        left: 0;
+        transition: left 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        pointer-events: none;
+      }
+
+      /* vị trí chạy của cục trượt đen */
+      .denim-indicators:has([data-bs-slide-to="0"].active)::after {
+        left: 0; /* nấc đầu tiên */
+      }
+      .denim-indicators:has([data-bs-slide-to="1"].active)::after {
+        left: 33.333%; /* nhảy sang nấc thứ 2 */
+      }
+      .denim-indicators:has([data-bs-slide-to="2"].active)::after {
+        left: 66.666%; /* nhảy sang nấc thứ 3 (cuối cùng) */
+      }
+
+      .footer-color {
+        background: #f5f3ed;
+      }
+
+      .border-color {
+        border: #cbcbcb;
+      }

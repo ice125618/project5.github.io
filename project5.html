@@ -1,0 +1,1731 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 5 - Bùi Thị Yến Nhi - 24211TT2675</title>
+    <!-- Bootstrap 5.3.0 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Font Jost -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/css/styles_project5.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header
+      class="mt-md-3 bg-white text-dark bg-md-black text-md-white border-bottom border-md-0"
+    >
+      <div class="container-fluid p-0 d-none d-md-block">
+        <div class="bg-black text-white pt-4 pb-4 px-4">
+          <div class="row align-items-center g-0">
+            <div class="col-md-2 text-center">
+              <img
+                class="img-fluid"
+                src="public/images/logo_2da11d11-eeed-4440-b8dd-8115bb68e896_200x.webp"
+                alt=""
+              />
+            </div>
+            <div class="col-md-10">
+              <div
+                class="d-flex justify-content-between align-items-center border-bottom border-secondary border-opacity-25 pb-3 mb-3"
+              >
+                <div class="text-xs fw-semibold" style="letter-spacing: 1px">
+                  <i class="fas fa-truck me-2 fs-6"></i> FREE SHIPPING FOR ORDER
+                  ABOVE $200. SHOP NOW !
+                </div>
+                <div class="d-flex gap-4 align-items-center small">
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none d-flex align-items-center gap-2"
+                    ><i class="fas fa-search fs-5"></i> Search</a
+                  >
+                  <a href="#" class="text-white text-decoration-none"
+                    >Account</a
+                  >
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none d-flex align-items-center gap-2"
+                  >
+                    <i class="fas fa-shopping-bag fs-5"></i> My Cart
+                    <span
+                      class="badge bg-cart text-dark rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0"
+                      style="
+                        width: 20px;
+                        height: 20px;
+                        font-size: 0.7rem;
+                        padding: 0;
+                      "
+                    >
+                      0
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-start flex-wrap gap-4">
+                <a
+                  href="#"
+                  class="text-white text-decoration-none small fw-medium tracking-wide"
+                  >DENIM JACKET</a
+                >
+                <a
+                  href="#"
+                  class="text-white text-decoration-none small fw-medium tracking-wide"
+                  >WINTER COATS</a
+                >
+                <a
+                  href="#"
+                  class="text-white text-decoration-none small fw-medium tracking-wide"
+                  >CARDIGANS</a
+                >
+                <a
+                  href="#"
+                  class="text-white text-decoration-none small fw-medium tracking-wide"
+                  >BLAZERS</a
+                >
+                <a
+                  href="#"
+                  class="text-white text-decoration-none small fw-medium tracking-wide"
+                  >SWEATER DRESSES</a
+                >
+                <a
+                  href="#"
+                  class="text-white text-decoration-none small fw-medium tracking-wide"
+                  >DENIM SHORTS</a
+                >
+                <a
+                  href="#"
+                  class="text-white text-decoration-none small fw-medium tracking-wide"
+                  >T-SHIRTS</a
+                >
+                <a
+                  href="#"
+                  class="text-white text-decoration-none small fw-medium tracking-wide"
+                  >ACCESSORIES</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-block d-md-none pt-3 pb-3">
+        <div
+          class="container-fluid d-flex justify-content-between align-items-center"
+        >
+          <img class="img-fluid" src="public/images/logo_350x.png" alt="" />
+
+          <div
+            class="d-flex flex-grow-1 mx-3 position-relative align-items-center"
+          >
+            <input
+              type="text"
+              class="form-control rounded-pill border-0 ps-3 pe-5 py-2 text-xs shadow-none"
+              placeholder="What are you looking for ?"
+              style="background-color: #f5f5f5; font-size: 0.8rem"
+            />
+            <i
+              class="fas fa-search position-absolute end-0 me-3 text-dark small"
+            ></i>
+          </div>
+
+          <button
+            class="navbar-toggler text-dark border-0 p-0 flex-shrink-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mobileNavMenu"
+          >
+            <i class="fas fa-bars fs-4"></i>
+          </button>
+        </div>
+
+        <div class="collapse container-fluid text-dark mt-3" id="mobileNavMenu">
+          <nav class="d-flex flex-column gap-2 pb-2 pt-2 border-top">
+            <a
+              href="#"
+              class="text-dark text-decoration-none py-2 small fw-medium border-bottom"
+              >DENIM JACKET</a
+            >
+            <a
+              href="#"
+              class="text-dark text-decoration-none py-2 small fw-medium border-bottom"
+              >WINTER COATS</a
+            >
+            <a
+              href="#"
+              class="text-dark text-decoration-none py-2 small fw-medium border-bottom"
+              >CARDIGANS</a
+            >
+            <a
+              href="#"
+              class="text-dark text-decoration-none py-2 small fw-medium"
+              >ACCESSORIES</a
+            >
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- CHÍNH SÁCH MUA HÀNG -->
+    <div class="container-fluid">
+      <div class="row bg-banner1 text-center">
+        <div class="col-12 col-md-4 py-3 border-end border-light">
+          <h6 class="fw-bold">30 DAYS RETURNS</h6>
+          <p class="mb-0">Simply return it within 30 days for an exchange.</p>
+        </div>
+
+        <div class="col-12 col-md-4 py-3 border-end border-light">
+          <h6 class="fw-bold">FREE US DELIVERY</h6>
+          <p class="mb-0">On orders over $200!.</p>
+        </div>
+
+        <div class="col-12 col-md-4 py-3">
+          <h6 class="fw-bold">SUPPORT 24/7</h6>
+          <p class="mb-0">Contact us 24 hours a day, 7 days a week.</p>
+        </div>
+      </div>
+    </div>
+    <!-- HERO SECTION -->
+    <section class="container-fluid p-0 mb-5 pb-4 position-relative">
+      <div
+        id="heroCarousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <!-- SLIDE 1 -->
+          <div class="carousel-item active" data-bs-interval="4000">
+            <div class="row g-0 m-0">
+              <div
+                class="col-12 col-md-6 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="public/images/bn_6_1512x.jpg"
+                  alt="Model"
+                  class="img-fluid w-100"
+                />
+              </div>
+              <div
+                class="col-12 col-md-6 d-block d-md-none text-center bg-white py-4"
+              >
+                <div
+                  class="bg-white border border-dark rounded-circle d-flex align-items-center justify-content-center fw-bold mx-auto mb-2"
+                  style="width: 46px; height: 46px"
+                >
+                  1
+                </div>
+                <div
+                  class="fw-bold text-uppercase text-nowrap"
+                  style="letter-spacing: 2px; font-size: 0.85rem"
+                >
+                  NEW SEASON STYLE 2026
+                </div>
+              </div>
+              <div
+                class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center"
+                style="background-color: #f8f8f8"
+              >
+                <div class="p-4 text-center" style="width: 320px">
+                  <img
+                    src="public/images/1_e2a5c399-1b7e-494f-a47a-2c1cc9777494_380x481_crop_center.webp"
+                    class="img-fluid mb-3"
+                    alt="Product"
+                  />
+                  <h5 class="fw-bold small mb-1">V neck blouse</h5>
+                  <div class="text-muted small mb-2">
+                    <i class="far fa-star"></i><i class="far fa-star"></i
+                    ><i class="far fa-star"></i><i class="far fa-star"></i
+                    ><i class="far fa-star"></i>
+                  </div>
+                  <p class="fw-bold m-0">$84.00</p>
+                </div>
+              </div>
+              <div
+                class="position-absolute start-50 translate-middle-x text-center d-none d-md-block"
+                style="top: 55%; z-index: 5"
+              >
+                <div
+                  class="bg-white border border-dark rounded-circle d-flex align-items-center justify-content-center fw-bold mx-auto mb-2"
+                  style="width: 46px; height: 46px"
+                >
+                  1
+                </div>
+                <div
+                  class="fw-bold text-uppercase text-nowrap"
+                  style="letter-spacing: 2px; font-size: 0.85rem"
+                >
+                  NEW SEASON STYLE 2026
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SLIDE 2 -->
+          <div class="carousel-item" data-bs-interval="4000">
+            <div class="row g-0 m-0">
+              <div
+                class="col-12 col-md-6 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="public/images/bn_4_bee301b8-f793-41b2-88a1-cc7b1fc8d0f0_1512x.jpg"
+                  alt="Model 2"
+                  class="img-fluid w-100"
+                />
+              </div>
+              <div
+                class="col-12 col-md-6 d-block d-md-none text-center bg-white py-4"
+              >
+                <div
+                  class="bg-white border border-dark rounded-circle d-flex align-items-center justify-content-center fw-bold mx-auto mb-2"
+                  style="width: 46px; height: 46px"
+                >
+                  2
+                </div>
+                <div
+                  class="fw-bold text-uppercase text-nowrap"
+                  style="letter-spacing: 2px; font-size: 0.85rem"
+                >
+                  SUMMER MUST-HAVES
+                </div>
+              </div>
+              <div
+                class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center"
+                style="background-color: #f8f8f8"
+              >
+                <div class="p-4 text-center" style="width: 320px">
+                  <img
+                    src="public/images/IMG_1333.JPG"
+                    class="img-fluid mb-3"
+                    alt="Product 2"
+                  />
+                  <h5 class="fw-bold small mb-1">Basic Sweat Joggers</h5>
+                  <div class="text-muted small mb-2">
+                    <i class="far fa-star"></i><i class="far fa-star"></i
+                    ><i class="far fa-star"></i><i class="far fa-star"></i
+                    ><i class="far fa-star"></i>
+                  </div>
+                  <p class="fw-bold m-0">$45.00</p>
+                </div>
+              </div>
+              <div
+                class="position-absolute start-50 translate-middle-x text-center d-none d-md-block"
+                style="top: 55%; z-index: 5"
+              >
+                <div
+                  class="bg-white border border-dark rounded-circle d-flex align-items-center justify-content-center fw-bold mx-auto mb-2"
+                  style="width: 46px; height: 46px"
+                >
+                  2
+                </div>
+                <div
+                  class="fw-bold text-uppercase text-nowrap"
+                  style="letter-spacing: 2px; font-size: 0.85rem"
+                >
+                  SUMMER MUST-HAVES
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SLIDE 3 -->
+          <div class="carousel-item" data-bs-interval="4000">
+            <div class="row g-0 m-0">
+              <div
+                class="col-12 col-md-6 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="public/images/img-8_1512x.jpg"
+                  alt="Model 3"
+                  class="img-fluid w-100"
+                />
+              </div>
+              <div
+                class="col-12 col-md-6 d-block d-md-none text-center bg-white py-4"
+              >
+                <div
+                  class="bg-white border border-dark rounded-circle d-flex align-items-center justify-content-center fw-bold mx-auto mb-2"
+                  style="width: 46px; height: 46px"
+                >
+                  3
+                </div>
+                <div
+                  class="fw-bold text-uppercase text-nowrap"
+                  style="letter-spacing: 2px; font-size: 0.85rem"
+                >
+                  TOP AUTUMN TRENDING 2021
+                </div>
+              </div>
+              <div
+                class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center"
+                style="background-color: #f8f8f8"
+              >
+                <div class="p-4 text-center" style="width: 320px">
+                  <img
+                    src="public/images/slideshow-6_540x.jpg"
+                    class="img-fluid mb-3"
+                    alt="Product 3"
+                  />
+                  <h5 class="fw-bold small mb-1">V neck blouse</h5>
+                  <div class="text-muted small mb-2">
+                    <i class="far fa-star"></i><i class="far fa-star"></i
+                    ><i class="far fa-star"></i><i class="far fa-star"></i
+                    ><i class="far fa-star"></i>
+                  </div>
+                  <p class="fw-bold m-0">$84.00</p>
+                </div>
+              </div>
+              <div
+                class="position-absolute start-50 translate-middle-x text-center d-none d-md-block"
+                style="top: 55%; z-index: 5"
+              >
+                <div
+                  class="bg-white border border-dark rounded-circle d-flex align-items-center justify-content-center fw-bold mx-auto mb-2"
+                  style="width: 46px; height: 46px"
+                >
+                  3
+                </div>
+                <div
+                  class="fw-bold text-uppercase text-nowrap"
+                  style="letter-spacing: 2px; font-size: 0.85rem"
+                >
+                  TOP AUTUMN TRENDING 2021
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-indicators hero-indicators">
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- DENIM COLLECTION -->
+    <section class="container-fluid mb-5 pt-3 pb-5">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-4 pe-md-5 mb-5 mb-md-0 ps-4">
+          <h2 class="fw-bold mb-3 fs-3 text-uppercase">DENIM COLLECTION</h2>
+          <p class="text-muted small mb-4" style="line-height: 1.6">
+            Discover the collection of denim - Shop top designers and SaleHub
+            design! Get personalised size recommendations with SaleHub fit
+            assistant.
+          </p>
+          <a
+            href="#"
+            class="text-dark fw-bold text-xs text-uppercase text-decoration-none border-bottom border-dark pb-1"
+            >VIEW ALL COLLECTION</a
+          >
+        </div>
+
+        <div class="col-12 col-md-8">
+          <div
+            id="denimCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <!-- CỤM SLIDE 1 -->
+              <div class="carousel-item active" data-bs-interval="5000">
+                <div class="row g-3 g-md-4">
+                  <div class="col-4 col-md-4">
+                    <div class="card border-0 bg-transparent">
+                      <img
+                        src="public/images/1_35559729-bb4f-477a-afbb-d695451b9719_540x.jpg"
+                        class="img-fluid"
+                        style="background-color: #ebebeb"
+                        alt="Denim 1"
+                      />
+                      <div class="card-body px-0">
+                        <h6 class="small fw-semibold mb-1">
+                          Eco Aware organic cotton top
+                        </h6>
+                        <div class="text-dark small mb-1">
+                          <i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="far fa-star"></i>
+                        </div>
+                        <p class="fw-bold small">$39.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-4">
+                    <div class="card border-0 bg-transparent">
+                      <img
+                        src="public/images/1_d8a840f3-d40e-4d28-8191-715f1a7874e4_720x.jpg"
+                        class="img-fluid"
+                        style="background-color: #ebebeb"
+                        alt="Denim 2"
+                      />
+                      <div class="card-body px-0">
+                        <h6 class="small fw-semibold mb-1">
+                          Basic sweat joggers
+                        </h6>
+                        <div class="text-dark small mb-1">
+                          <i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="far fa-star"></i>
+                        </div>
+                        <p class="fw-bold small">
+                          $11.00
+                          <span
+                            class="text-muted text-decoration-line-through fw-normal ms-2"
+                            >$13.00</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-4">
+                    <div class="card border-0 bg-transparent">
+                      <img
+                        src="public/images/1_7bb38758-0669-4713-864a-f6723b07f307_540x.jpg"
+                        class="img-fluid"
+                        style="background-color: #ebebeb"
+                        alt="Denim 3"
+                      />
+                      <div class="card-body px-0">
+                        <h6 class="small fw-semibold mb-1">
+                          Embossed knit cardigan
+                        </h6>
+                        <div class="text-dark small mb-1">
+                          <i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="far fa-star"></i>
+                        </div>
+                        <p class="fw-bold small">$18.00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- CỤM SLIDE 2 -->
+              <div class="carousel-item" data-bs-interval="5000">
+                <div class="row g-3 g-md-4">
+                  <div class="col-4 col-md-4">
+                    <div class="card border-0 bg-transparent">
+                      <img
+                        src="public/images/1_8624266d-ffc8-44db-b030-5f62c62138d5_540x.jpg"
+                        class="img-fluid"
+                        style="background-color: #ebebeb"
+                        alt="Denim 4"
+                      />
+                      <div class="card-body px-0">
+                        <h6 class="small fw-semibold mb-1">
+                          Vintage Denim Jacket
+                        </h6>
+                        <div class="text-dark small mb-1">
+                          <i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="fas fa-star"></i>
+                        </div>
+                        <p class="fw-bold small">$85.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-4">
+                    <div class="card border-0 bg-transparent">
+                      <img
+                        src="public/images/1_a5f6af0e-b13e-47bb-883f-bd586149cbad_900x.jpg"
+                        class="img-fluid"
+                        style="background-color: #ebebeb"
+                        alt="Denim 1"
+                      />
+                      <div class="card-body px-0">
+                        <h6 class="small fw-semibold mb-1">
+                          Eco Aware organic cotton top
+                        </h6>
+                        <div class="text-dark small mb-1">
+                          <i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="far fa-star"></i>
+                        </div>
+                        <p class="fw-bold small">$39.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-4">
+                    <div class="card border-0 bg-transparent">
+                      <img
+                        src="public/images/1_a623080a-877d-4b4b-b4be-2521798cef99_720x.jpg"
+                        class="img-fluid"
+                        style="background-color: #ebebeb"
+                        alt="Denim 2"
+                      />
+                      <div class="card-body px-0">
+                        <h6 class="small fw-semibold mb-1">
+                          Basic sweat joggers
+                        </h6>
+                        <div class="text-dark small mb-1">
+                          <i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="far fa-star"></i>
+                        </div>
+                        <p class="fw-bold small">$11.00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- CỤM SLIDE 3 -->
+              <div class="carousel-item" data-bs-interval="5000">
+                <div class="row g-3 g-md-4">
+                  <div class="col-4 col-md-4">
+                    <div class="card border-0 bg-transparent">
+                      <img
+                        src="public/images/1_bc70b428-ba01-434a-87f7-7fc276929722_540x.jpg"
+                        class="img-fluid"
+                        style="background-color: #ebebeb"
+                        alt="Denim 5"
+                      />
+                      <div class="card-body px-0">
+                        <h6 class="small fw-semibold mb-1">
+                          Light Wash Denim Coat
+                        </h6>
+                        <div class="text-dark small mb-1">
+                          <i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="fas fa-star"></i>
+                        </div>
+                        <p class="fw-bold small">$79.90</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-4">
+                    <div class="card border-0 bg-transparent">
+                      <img
+                        src="public/images/1_c0df3076-19c1-4535-a664-270cf6e05ab5_720x.jpg"
+                        class="img-fluid"
+                        style="background-color: #ebebeb"
+                        alt="Denim 1"
+                      />
+                      <div class="card-body px-0">
+                        <h6 class="small fw-semibold mb-1">
+                          Eco Aware organic cotton top
+                        </h6>
+                        <div class="text-dark small mb-1">
+                          <i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="far fa-star"></i>
+                        </div>
+                        <p class="fw-bold small">$39.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-4">
+                    <div class="card border-0 bg-transparent">
+                      <img
+                        src="public/images/1_c02958e8-91cd-4497-83ce-e5509baad4b4_720x.jpg"
+                        class="img-fluid"
+                        style="background-color: #ebebeb"
+                        alt="Denim 3"
+                      />
+                      <div class="card-body px-0">
+                        <h6 class="small fw-semibold mb-1">
+                          Embossed knit cardigan
+                        </h6>
+                        <div class="text-dark small mb-1">
+                          <i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="far fa-star"></i>
+                        </div>
+                        <p class="fw-bold small">$18.00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-indicators denim-indicators">
+              <button
+                type="button"
+                data-bs-target="#denimCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#denimCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#denimCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCT -->
+    <section class="container-fluid py-5" style="background-color: #dfddd3">
+      <div class="container-fluid px-3 px-md-5 py-md-4">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-md-5 mb-4 mb-md-0 ps-md-5">
+            <p
+              class="text-uppercase text-xs fw-bold mb-3"
+              style="letter-spacing: 1px"
+            >
+              FEATURED PRODUCT
+            </p>
+
+            <h1 class="display-6 display-md-5 fw-bold mb-4">
+              Every Cloud Intarsia<br />Knit Jumper
+            </h1>
+
+            <p class="text-muted small mb-5 pe-md-5" style="line-height: 1.8">
+              Nothing but blue skies ahead! Do you know your cumulus from your
+              cirrus? Let's go cloudspotting in Every, our comfy, cool 100%
+              cotton cloud intarsia motif jumper with a knitted bright blue sky
+              and little fluffy clouds, cast in a classic fit shape with a crew
+              neckline and rib detail hem and cuffs
+            </p>
+
+            <button
+              class="btn btn-dark rounded-0 px-4 py-2 text-uppercase fw-semibold small"
+            >
+              BUY NOW
+            </button>
+          </div>
+
+          <div class="col-12 col-md-7 pe-md-5">
+            <div
+              class="position-relative mx-auto ms-md-auto me-md-0"
+              style="max-width: 530px; aspect-ratio: 1.1 / 1"
+            >
+              <img
+                src="public/images/feature_1_330x441_crop_center.jpg"
+                class="position-absolute shadow-sm"
+                style="top: 22%; left: 0; width: 42%; z-index: 3; height: auto"
+                alt="Hình áo len treo móc"
+              />
+
+              <img
+                src="public/images/feature_2_420x560_crop_center.jpg"
+                class="position-absolute shadow-sm"
+                style="
+                  top: 14%;
+                  left: 31%;
+                  width: 43%;
+                  z-index: 2;
+                  height: auto;
+                "
+                alt="Hình mẫu ngồi"
+              />
+
+              <img
+                src="public/images/feature_3_375x500_crop_center.jpg"
+                class="position-absolute shadow-sm"
+                style="top: 4%; right: 0; width: 41%; z-index: 1; height: auto"
+                alt="Hình mẫu đứng"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPLIT BANNERS -->
+    <section class="container-fluid p-0 mb-5 w-100">
+      <div class="d-none d-md-block w-100">
+        <div class="row g-0 align-items-center w-100 m-0">
+          <div class="col-6 p-0">
+            <img
+              src="public/images/bn-1_52a4ba95-a367-41d7-983b-d0995c332815_1512x.webp"
+              class="img-fluid w-100 d-block"
+              style="
+                height: 450px;
+                object-fit: cover;
+                background-color: #ebebeb;
+              "
+              alt="Banner 1"
+            />
+          </div>
+          <div
+            class="col-6 position-relative d-flex align-items-center justify-content-start bg-white"
+            style="min-height: 450px"
+          >
+            <div style="max-width: 420px" class="ms-5 ps-5 text-start w-100">
+              <div class="position-relative">
+                <div
+                  class="bg-dark position-absolute"
+                  style="
+                    width: 110px;
+                    height: 2px;
+                    left: -140px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: 10;
+                  "
+                ></div>
+                <h3
+                  class="fw-bold mb-3 fs-4 text-uppercase"
+                  style="letter-spacing: 1px; line-height: 1.3"
+                >
+                  Women's<br />Denim mini dress
+                </h3>
+              </div>
+              <p class="text-muted small mb-4" style="line-height: 1.8">
+                Does it get any more summertime than a classic summer dress?
+                This wardrobe icon has earned its rightful place on our list of
+                sunshine must-haves for a good reason.
+              </p>
+              <a
+                href="#"
+                class="text-dark fw-bold text-uppercase text-decoration-none border-bottom border-dark pb-1"
+                style="font-size: 0.75rem; letter-spacing: 1px"
+                >VIEW MORE</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-0 align-items-center flex-md-row-reverse w-100 m-0">
+          <div class="col-6 p-0">
+            <img
+              src="public/images/bn-2_10be06eb-d4b1-4259-88a3-473a1127f86e_1512x.webp"
+              class="img-fluid w-100 d-block"
+              style="
+                height: 450px;
+                object-fit: cover;
+                background-color: #ebebeb;
+              "
+              alt="Banner 2"
+            />
+          </div>
+          <div
+            class="col-6 position-relative d-flex align-items-center justify-content-end bg-white"
+            style="min-height: 450px"
+          >
+            <div style="max-width: 420px" class="me-5 pe-5 text-end w-100">
+              <div class="position-relative w-100">
+                <div
+                  class="bg-dark position-absolute"
+                  style="
+                    width: 110px;
+                    height: 2px;
+                    right: -140px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: 10;
+                  "
+                ></div>
+                <h3
+                  class="fw-bold mb-3 fs-4 text-uppercase"
+                  style="letter-spacing: 1px; line-height: 1.3"
+                >
+                  Handbag<br />with a chain
+                </h3>
+              </div>
+              <p class="text-muted small mb-4" style="line-height: 1.8">
+                Shop the 27 best chain handbags for fall at a range of prices so
+                wide we're guaranteeing there's something for everyone.
+              </p>
+              <a
+                href="#"
+                class="text-dark fw-bold text-uppercase text-decoration-none border-bottom border-dark pb-1"
+                style="font-size: 0.75rem; letter-spacing: 1px"
+                >VIEW MORE</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-block d-md-none w-100">
+        <div class="w-100 bg-white mb-5">
+          <img
+            src="public/images/bn-1_52a4ba95-a367-41d7-983b-d0995c332815_1512x.webp"
+            class="img-fluid w-100 d-block"
+            style="height: 450px; object-fit: cover; background-color: #ebebeb"
+            alt="Banner 1"
+          />
+
+          <div class="px-4 py-5 text-start">
+            <div class="row g-0 align-items-center mb-3">
+              <div class="col-auto pe-4">
+                <div class="bg-dark" style="width: 110px; height: 2px"></div>
+              </div>
+              <div class="col">
+                <h3
+                  class="fw-bold mb-0 fs-4 text-uppercase"
+                  style="letter-spacing: 1px; line-height: 1.3"
+                >
+                  Women's<br />Denim mini dress
+                </h3>
+              </div>
+            </div>
+
+            <div class="row g-0">
+              <div class="col-auto pe-4" style="visibility: hidden">
+                <div style="width: 110px"></div>
+              </div>
+              <div class="col text-start">
+                <p class="text-muted small mb-4" style="line-height: 1.8">
+                  Does it get any more summertime than a classic summer dress?
+                  This wardrobe icon has earned its rightful place on our list
+                  of sunshine must-haves for a good reason.
+                </p>
+                <a
+                  href="#"
+                  class="text-dark fw-bold text-uppercase text-decoration-none border-bottom border-dark pb-1"
+                  style="font-size: 0.75rem; letter-spacing: 1px"
+                >
+                  VIEW MORE
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-100 bg-white">
+          <img
+            src="public/images/bn-2_10be06eb-d4b1-4259-88a3-473a1127f86e_1512x.webp"
+            class="img-fluid w-100 d-block"
+            style="height: 450px; object-fit: cover; background-color: #ebebeb"
+            alt="Banner 2"
+          />
+
+          <div class="px-4 py-5 text-end">
+            <div class="row g-0 align-items-center justify-content-end mb-3">
+              <div class="col">
+                <h3
+                  class="fw-bold mb-0 fs-4 text-uppercase text-end"
+                  style="letter-spacing: 1px; line-height: 1.3"
+                >
+                  Handbag<br />with a chain
+                </h3>
+              </div>
+              <div class="col-auto ps-4">
+                <div class="bg-dark" style="width: 110px; height: 2px"></div>
+              </div>
+            </div>
+
+            <div class="row g-0 justify-content-end">
+              <div class="col text-end">
+                <p
+                  class="text-muted small mb-4 text-end"
+                  style="line-height: 1.8"
+                >
+                  Shop the 27 best chain handbags for fall at a range of prices
+                  so wide we're guaranteeing there's something for everyone.
+                </p>
+                <div class="text-end">
+                  <a
+                    href="#"
+                    class="text-dark fw-bold text-uppercase text-decoration-none border-bottom border-dark pb-1"
+                    style="font-size: 0.75rem; letter-spacing: 1px"
+                  >
+                    VIEW MORE
+                  </a>
+                </div>
+              </div>
+              <div class="col-auto ps-4" style="visibility: hidden">
+                <div style="width: 110px"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR MISSION -->
+    <div class="container my-5 py-5">
+      <div class="row text-center mt-5">
+        <div class="col-12">
+          <h6 class="text-uppercase small" style="letter-spacing: 2px">
+            OUR MISSION
+          </h6>
+
+          <p class="pt-2 fs-2">
+            “Being perfectly well-dressed gives one a tranquillity <br />
+            that no religion can bestow”
+          </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mb-5">
+        <div class="col-12 col-md-9 col-lg-8">
+          <div
+            class="text-muted small lh-lg"
+            style="font-size: 0.75rem; letter-spacing: 1px"
+          >
+            <p class="text-start m-0">
+              LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO
+              EIUSMOD TEMPOR INCIDIDUNT
+            </p>
+            <p class="text-start m-0">
+              UT LABORE ET DOLORE MAGNA ALIQUA. QUIS IPSUM SUSPENDISSE ULTRICES
+              GRAVIDA. RISUS COMMODO
+            </p>
+
+            <p class="text-center m-0 mt-2">VIVERRA MAECENAS ACCUMSAN</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="mt-0 mb-0" />
+
+    <!-- FOR HIM -->
+
+    <div class="container-fluid p-0">
+      <div class="row py-2 g-0">
+        <div class="col">
+          <nav
+            class="navbar navbar-expand-lg bg-white navbar-light position-relative p-0 mb-0 ps-3 pe-3 ps-md-5 pe-md-5"
+          >
+            <div
+              class="d-none d-lg-flex w-100 justify-content-between align-items-center py-4"
+            >
+              <div
+                class="collapse navbar-collapse show"
+                id="navbarSupportedContent"
+              >
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item me-4">
+                    <a
+                      class="nav-link active fw-bold text-dark border-bottom border-2 border-dark pb-1"
+                      aria-current="page"
+                      href="#"
+                      >Outerwear</a
+                    >
+                  </li>
+                  <li class="nav-item me-4">
+                    <a class="nav-link" href="#">Sweaters</a>
+                  </li>
+                  <li class="nav-item me-4">
+                    <a class="nav-link" href="#">Jackets</a>
+                  </li>
+                  <li class="nav-item me-4">
+                    <a class="nav-link" href="#">Trousers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">T-Shirts</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                class="section-title text-nowrap fw-bolder fs-3 position-absolute start-50 translate-middle-x"
+              >
+                FOR HIM
+              </div>
+
+              <div class="d-flex align-items-center gap-2 ms-auto text-nowrap">
+                <hr
+                  class="d-inline-block border-dark opacity-100 m-0"
+                  style="width: 30px; height: 2px"
+                />
+                <a class="view-all-link text-dark text-decoration-none" href="#"
+                  >View All Collection</a
+                >
+              </div>
+            </div>
+
+            <div
+              class="d-flex d-lg-none flex-wrap w-100 align-items-center justify-content-between py-3 gap-2"
+            >
+              <div class="w-100 text-center mb-2">
+                <span class="fw-bolder fs-3">FOR HIM</span>
+              </div>
+
+              <div class="p-0">
+                <ul class="navbar-nav d-flex flex-row gap-3 mb-0 p-0">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active fw-bold text-dark border-bottom border-2 border-dark pb-1 p-0"
+                      style="font-size: 13px"
+                      href="#"
+                      >Outerwear</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link p-0 text-muted opacity-50"
+                      style="font-size: 13px"
+                      href="#"
+                      >Sweaters</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link p-0 text-muted opacity-50"
+                      style="font-size: 13px"
+                      href="#"
+                      >Jackets</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link p-0 text-muted opacity-50"
+                      style="font-size: 13px"
+                      href="#"
+                      >Trousers</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link p-0 text-muted opacity-50"
+                      style="font-size: 13px"
+                      href="#"
+                      >T-Shirts</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="d-flex align-items-center gap-2 text-nowrap p-0">
+                <hr
+                  class="d-inline-block border-dark opacity-100 m-0"
+                  style="width: 30px; height: 2px"
+                />
+                <a
+                  class="view-all-link text-dark text-decoration-none fw-bold"
+                  href="#"
+                  style="font-size: 11px"
+                  >View All Collection</a
+                >
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row g-0">
+        <div class="col-6 col-md-3 ps-0 pe-0 border-end border-color">
+          <img
+            class="img-fluid"
+            src="public/images/1_fb07f6fc-f4bb-46a9-966d-1a0b66e6960a_540x.jpg"
+            alt=""
+          />
+          <p class="ps-5 pt-3 fw-bold">Classic one-breasted jacket</p>
+          <p class="text-dark ps-5">
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i
+              class="fa-solid fa-star-half-stroke"
+              style="color: rgb(0, 0, 0)"
+            ></i>
+          </p>
+          <p class="ps-5 fw-bold">$21.00</p>
+        </div>
+
+        <div class="col-6 col-md-3 ps-0 pe-0 border-end border-color">
+          <img
+            class="img-fluid"
+            src="public/images/1_afb70b63-ea30-4380-b7d3-8e5e765569aa_540x.jpg"
+            alt=""
+          />
+          <p class="ps-5 pt-3 fw-bold">Black Denim Jacket</p>
+          <p class="text-dark ps-5">
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i
+              class="fa-solid fa-star-half-stroke"
+              style="color: rgb(0, 0, 0)"
+            ></i>
+          </p>
+          <p class="ps-5 fw-bold">$85.00</p>
+        </div>
+
+        <div class="col-6 col-md-3 ps-0 pe-0 border-end border-color">
+          <img
+            class="img-fluid"
+            src="public/images/1_e6fe8d6a-e054-4a68-ae4c-84dfb4f66d48_540x.jpg"
+            alt=""
+          />
+          <p class="ps-5 pt-3 fw-bold">T-shirt with slogan</p>
+          <p class="text-dark ps-5">
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i
+              class="fa-solid fa-star-half-stroke"
+              style="color: rgb(0, 0, 0)"
+            ></i>
+            <i class="far fa-star"></i>
+          </p>
+          <p class="ps-5 fw-bold">$104.00</p>
+        </div>
+
+        <div class="col-6 col-md-3 ps-0 pe-0">
+          <img
+            class="img-fluid"
+            src="public/images/1_d0fab98a-800a-4656-ad83-a1ad17efc924_540x.jpg"
+            alt=""
+          />
+          <p class="ps-5 pt-3 fw-bold">Blended wool coat</p>
+          <p class="text-dark ps-5">
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="far fa-star"></i>
+          </p>
+          <p class="ps-5 fw-bold">$14.00</p>
+        </div>
+      </div>
+
+      <div class="row g-0">
+        <div class="col-6 col-md-3 ps-0 pe-0">
+          <img
+            class="img-fluid border-end border-color"
+            src="public/images/1_423afc51-89a7-412d-b94e-1905f35af736_540x.jpg"
+            alt=""
+          />
+          <p class="ps-5 pt-3 fw-bold">Black Bomber Jacket</p>
+          <p class="text-dark ps-5">
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i
+              class="fa-solid fa-star-half-stroke"
+              style="color: rgb(0, 0, 0)"
+            ></i>
+          </p>
+          <p class="ps-5 fw-bold">$16.00</p>
+        </div>
+
+        <div class="col-6 col-md-3 ps-0 pe-0">
+          <img
+            class="img-fluid border-end border-color"
+            src="public/images/1_225b9840-5824-4a66-801e-fa5640519db5_540x.jpg"
+            alt=""
+          />
+          <p class="ps-5 pt-3 fw-bold">Lightweight bomber jacket</p>
+          <p class="text-dark ps-5">
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+          </p>
+          <p class="ps-5 fw-bold">$74.00</p>
+        </div>
+
+        <div class="col-6 col-md-3 ps-0 pe-0">
+          <img
+            class="img-fluid border-end border-color"
+            src="public/images/1_96a01a8d-3536-48d8-83ec-6279e0ee6f8e_540x.jpg"
+            alt=""
+          />
+          <p class="ps-5 pt-3 fw-bold">Transition jacket with hood</p>
+          <p class="text-dark ps-5">
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i
+              class="fa-solid fa-star-half-stroke"
+              style="color: rgb(0, 0, 0)"
+            ></i>
+          </p>
+          <p class="ps-5 fw-bold">$113.00</p>
+        </div>
+
+        <div class="col-6 col-md-3 ps-0 pe-0">
+          <img
+            class="img-fluid border-end border-color"
+            src="public/images/1_34ccf0b4-eca9-4653-9154-f1d88213386f_540x.jpg"
+            alt=""
+          />
+          <p class="ps-5 pt-3 fw-bold">Classic shirt pocket</p>
+          <p class="text-dark ps-5">
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+            <i class="far fa-star"></i>
+          </p>
+          <p class="ps-5 fw-bold">$26.00</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FROM OUR CUSTOMERS -->
+    <section class="py-5 bg-white text-center">
+      <div class="container">
+        <h2
+          class="text-uppercase fw-bold tracking-wider mb-2"
+          style="letter-spacing: 2px; font-size: 1.5rem"
+        >
+          From Our Customers
+        </h2>
+
+        <div
+          id="customerCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="3000"
+        >
+          <div class="text-dark small mb-5">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="mb-3">
+                <img
+                  src="public/images/av-1_80x.png"
+                  class="rounded-circle img-fluid"
+                  alt="Christina M."
+                  style="width: 60px; height: 60px; object-fit: cover"
+                />
+              </div>
+
+              <p
+                class="text-muted small text-uppercase mb-4"
+                style="letter-spacing: 1px; font-size: 0.75rem"
+              >
+                Christina M. / From Canada
+              </p>
+
+              <div class="row justify-content-center mb-4">
+                <div class="col-12 col-md-8 col-lg-6">
+                  <p
+                    class="fs-5 text-secondary lh-base"
+                    style="font-weight: 300; font-style: normal"
+                  >
+                    "Best purchase I've made this winter! The color and knitting
+                    are exquisite and it's so comfy! Went from NYC to Miami
+                    without ever taking it off. Super cute!!"
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="mb-3">
+                <img
+                  src="public/images/av-2_80x.png"
+                  class="rounded-circle img-fluid"
+                  alt="Anna K."
+                  style="width: 60px; height: 60px; object-fit: cover"
+                />
+              </div>
+
+              <p
+                class="text-muted small text-uppercase mb-4"
+                style="letter-spacing: 1px; font-size: 0.75rem"
+              >
+                Anna K. / From UK
+              </p>
+
+              <div class="row justify-content-center mb-4">
+                <div class="col-12 col-md-8 col-lg-6">
+                  <p
+                    class="fs-5 text-secondary lh-base"
+                    style="font-weight: 300; font-style: normal"
+                  >
+                    "I am in love with this brand! Customer service was
+                    incredibly helpful, and the design is absolutely stunning.
+                    Highly recommended!"
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="mb-3">
+                <img
+                  src="public/images/9_50x50.jpg"
+                  class="rounded-circle img-fluid"
+                  alt="Anna K."
+                  style="width: 60px; height: 60px; object-fit: cover"
+                />
+              </div>
+
+              <p
+                class="text-muted small text-uppercase mb-4"
+                style="letter-spacing: 1px; font-size: 0.75rem"
+              >
+                Anna K. / From UK
+              </p>
+
+              <div class="row justify-content-center mb-4">
+                <div class="col-12 col-md-8 col-lg-6">
+                  <p
+                    class="fs-5 text-secondary lh-base"
+                    style="font-weight: 300; font-style: normal"
+                  >
+                    "I am in love with this brand! Customer service was
+                    incredibly helpful, and the design is absolutely stunning.
+                    Highly recommended!"
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="mb-3">
+                <img
+                  src="public/images/7_7d379fe4-a861-4ff4-a474-15b70e999b6a_50x50.jpg"
+                  class="rounded-circle img-fluid"
+                  alt="Anna K."
+                  style="width: 60px; height: 60px; object-fit: cover"
+                />
+              </div>
+
+              <p
+                class="text-muted small text-uppercase mb-4"
+                style="letter-spacing: 1px; font-size: 0.75rem"
+              >
+                Anna K. / From UK
+              </p>
+
+              <div class="row justify-content-center mb-4">
+                <div class="col-12 col-md-8 col-lg-6">
+                  <p
+                    class="fs-5 text-secondary lh-base"
+                    style="font-weight: 300; font-style: normal"
+                  >
+                    "I am in love with this brand! Customer service was
+                    incredibly helpful, and the design is absolutely stunning.
+                    Highly recommended!"
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="carousel-indicators position-relative m-0 mt-2 d-flex justify-content-center gap-2"
+          >
+            <span
+              data-bs-target="#customerCarousel"
+              data-bs-slide-to="0"
+              class="bg-dark rounded-circle active"
+              style="
+                width: 8px;
+                height: 8px;
+                display: inline-block;
+                cursor: pointer;
+              "
+            ></span>
+            <span
+              data-bs-target="#customerCarousel"
+              data-bs-slide-to="1"
+              class="bg-secondary bg-opacity-25 rounded-circle"
+              style="
+                width: 8px;
+                height: 8px;
+                display: inline-block;
+                cursor: pointer;
+              "
+            ></span>
+
+            <span
+              data-bs-target="#customerCarousel"
+              data-bs-slide-to="2"
+              class="bg-secondary bg-opacity-25 rounded-circle"
+              style="
+                width: 8px;
+                height: 8px;
+                display: inline-block;
+                cursor: pointer;
+              "
+            ></span>
+
+            <span
+              data-bs-target="#customerCarousel"
+              data-bs-slide-to="3"
+              class="bg-secondary bg-opacity-25 rounded-circle"
+              style="
+                width: 8px;
+                height: 8px;
+                display: inline-block;
+                cursor: pointer;
+              "
+            ></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer-color">
+      <div class="container-fluid px-3 px-md-5">
+        <div class="row pt-5 pb-4 align-items-start">
+          <div class="col-6 col-md-9 mb-4 mb-md-0">
+            <img
+              src="public/images/logo_350x.png"
+              alt=""
+              class="img-fluid"
+              style="max-width: 150px"
+            />
+            <p class="pt-3 mb-1 small text-muted">
+              We're available by phone
+              <span class="fs-6 text-dark fw-bold">+123-456-789</span>
+            </p>
+            <p class="mb-1 small text-muted">info@example.com</p>
+            <p class="fw-bold small text-dark">
+              Monday till Friday 10 to 6 EST
+            </p>
+          </div>
+
+          <div class="col-6 col-md-3 text-start text-md-start">
+            <p
+              class="fw-bold small mb-2 text-dark"
+              style="font-size: 11px; letter-spacing: 0.5px"
+            >
+              GET MORE RESERVED ON:
+            </p>
+            <div class="d-flex flex-wrap justify-content-start gap-3 fs-6 pt-1">
+              <i class="fa-brands fa-facebook-f text-dark"></i>
+              <i class="fa-brands fa-twitter text-dark"></i>
+              <i class="fa-brands fa-pinterest text-dark"></i>
+              <i class="fa-brands fa-vimeo-v text-dark"></i>
+              <i class="fa-brands fa-instagram text-dark"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="row py-4 border-top border-secondary border-opacity-10">
+          <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <h6
+              class="fw-bold text-dark mb-3"
+              style="font-size: 12px; letter-spacing: 0.5px"
+            >
+              ABOUT US
+            </h6>
+            <div class="small text-muted d-flex flex-column gap-2">
+              <p class="m-0">
+                <a class="text-muted text-decoration-none" href="">About Us</a>
+              </p>
+              <p class="m-0">Contact Us</p>
+              <p class="m-0">Factories</p>
+              <p class="m-0">Careers</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <h6
+              class="fw-bold text-dark mb-3"
+              style="font-size: 12px; letter-spacing: 0.5px"
+            >
+              ORDERS AND RETURNS
+            </h6>
+            <div class="small text-muted d-flex flex-column gap-2">
+              <p class="m-0">Help and advice</p>
+              <p class="m-0">Shipping & Returns</p>
+              <p class="m-0">Terms and conditions</p>
+              <p class="m-0">Refund Policy</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <h6
+              class="fw-bold text-dark mb-3"
+              style="font-size: 12px; letter-spacing: 0.5px"
+            >
+              MY ACCOUNT
+            </h6>
+            <div class="small text-muted d-flex flex-column gap-2">
+              <p class="m-0">Login</p>
+              <p class="m-0">Register</p>
+              <p class="m-0">My Wishlist</p>
+              <p class="m-0">Check Out</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <h6
+              class="fw-bold text-dark mb-3"
+              style="font-size: 12px; letter-spacing: 0.5px"
+            >
+              NEWSLETTER
+            </h6>
+            <div class="small text-muted">
+              <p class="mb-3" style="font-size: 11px; line-height: 1.5">
+                Receive our weekly newsletter. For dietary content, fashion
+                insider and the best offers.
+              </p>
+              <input
+                class="border bg-white border-secondary border-opacity-50 py-2 px-2 w-100 small mb-2"
+                type="text"
+                placeholder="Email address..."
+              />
+              <button
+                class="btn btn-dark w-100 rounded-0 fw-bold py-2"
+                style="font-size: 11px; letter-spacing: 1px"
+              >
+                SIGN ME UP
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border border-secondary border-opacity-25 my-0" />
+
+      <div class="container px-3 px-md-5">
+        <div
+          class="row align-items-center py-4 flex-column-reverse flex-md-row gap-3 gap-md-0"
+        >
+          <div class="col-12 col-md-4 text-center text-md-start">
+            <p class="m-0 small text-muted">
+              Copyright &copy; 2021 Vinovathemes.
+            </p>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <img
+              src="public/images/paypal_240x.png"
+              alt=""
+              class="img-fluid"
+              style="max-height: 25px"
+            />
+          </div>
+          <div class="col-12 col-md-4 text-center text-md-end">
+            <p
+              class="d-inline-flex align-items-center gap-2 m-0 small text-muted"
+            >
+              <span>Choose Currency : USD</span>
+              <a
+                href="#top"
+                class="d-inline-flex align-items-center bg-white justify-content-center border border-dark rounded-circle text-dark text-decoration-none"
+                style="width: 28px; height: 28px"
+              >
+                <i class="fa-solid fa-chevron-up" style="font-size: 10px"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="d-block d-md-none fixed-bottom bg-white border-top border-secondary border-opacity-25 py-2 shadow-sm" 
+      >
+        <div class="container-fluid">
+          <div class="row text-center align-items-center g-0">
+            <div class="col">
+              <a
+                href="#"
+                class="text-dark text-decoration-none d-flex flex-column align-items-center"
+              >
+                <i class="fa-solid fa-house mb-1" style="font-size: 16px"></i>
+                <span
+                  class="fw-bold text-uppercase text-secondary"
+                  style="font-size: 9px; letter-spacing: 0.5px"
+                  >HOME</span
+                >
+              </a>
+            </div>
+
+            <div class="col">
+              <a
+                href="#"
+                class="text-dark text-decoration-none d-flex flex-column align-items-center"
+              >
+                <i class="fa-solid fa-heart mb-1" style="font-size: 16px"></i>
+                <span
+                  class="fw-bold text-uppercase text-secondary"
+                  style="font-size: 9px; letter-spacing: 0.5px"
+                  >WISHLIST</span
+                >
+              </a>
+            </div>
+
+            <div class="col">
+              <a
+                href="#"
+                class="text-dark text-decoration-none d-flex flex-column align-items-center position-relative"
+              >
+                <div class="position-relative">
+                  <i
+                    class="fa-solid fa-cart-shopping mb-1"
+                    style="font-size: 16px"
+                  ></i>
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-warning text-dark border border-white p-1 fw-bold"
+                    style="
+                      font-size: 8px;
+                      min-width: 14px;
+                      height: 14px;
+                      line-height: 6px;
+                    "
+                    >0</span
+                  >
+                </div>
+                <span
+                  class="fw-bold text-uppercase text-secondary mt-1"
+                  style="font-size: 9px; letter-spacing: 0.5px"
+                  >CART</span
+                >
+              </a>
+            </div>
+
+            <div class="col">
+              <a
+                href="#"
+                class="text-dark text-decoration-none d-flex flex-column align-items-center"
+              >
+                <i class="fa-solid fa-gear mb-1" style="font-size: 16px"></i>
+                <span
+                  class="fw-bold text-uppercase text-secondary"
+                  style="font-size: 9px; letter-spacing: 0.5px"
+                  >SETTING</span
+                >
+              </a>
+            </div>
+
+            <div class="col">
+              <a
+                href="#top"
+                class="text-dark text-decoration-none d-flex flex-column align-items-center"
+              >
+                <i
+                  class="fa-solid fa-circle-arrow-up mb-1"
+                  style="font-size: 16px"
+                ></i>
+                <span
+                  class="fw-bold text-uppercase text-secondary"
+                  style="font-size: 9px; letter-spacing: 0.5px"
+                  >ON TOP</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.0 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+/* ================================================
+   salehub.css – only overrides Bootstrap can't do
+   ================================================ */
+
+/* ── FONTS ── */
+body {
+  font-family: 'Jost', sans-serif;
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+/* ── COLORS / TOKENS ── */
+:root {
+  --cream: #f5f3ef;
+  --dark:  #111111;
+  --muted: #888888;
+  --accent: #c8a87e;
+  --border: #e0ddd8;
+}
+
+/* ── TYPOGRAPHY ── */
+.display-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(28px, 3.5vw, 44px);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--dark);
+}
+
+.blockquote-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(22px, 3vw, 38px);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--dark);
+}
+
+.ls-wide { letter-spacing: .1em; }
+
+/* ── ANNOUNCEMENT BAR ── */
+#announcement-bar { background: var(--dark); font-size: 12px; }
+
+/* ── NAVBAR ── */
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  letter-spacing: .02em;
+  color: var(--dark) !important;
+}
+
+.nav-item-custom {
+  font-size: 11px;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--dark) !important;
+  padding: 0 10px !important;
+  transition: color .2s;
+}
+.nav-item-custom:hover { color: var(--accent) !important; }
+
+.cart-badge { background: var(--dark); font-size: 9px; }
+
+/* ── HERO ── */
+.hero-row       { min-height: 520px; }
+.hero-img-col   { background: #e8e5e0; }
+.hero-img       { object-fit: cover; object-position: top center; height: 520px; }
+.hero-right     { min-height: 520px; }
+.bg-hero-right  { background: #f0edea; }
+
+/* Carousel overrides */
+.carousel-indicators-custom { bottom: 16px; }
+.carousel-indicators-custom [data-bs-target] {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--dark);
+  border: none; opacity: .35;
+}
+.carousel-indicators-custom .active { opacity: 1; }
+
+.carousel-btn {
+  width: 40px; opacity: 1;
+}
+.carousel-btn .bi { filter: none; }
+.carousel-control-prev-icon,
+.carousel-control-next-icon { display: none; } /* hide default icons */
+
+/* ── TRUST BAR ── */
+.trust-title { font-size: 11px; }
+.trust-desc  { font-size: 11px; color: var(--muted); }
+
+/* ── UTILITY ── */
+.bg-cream { background: var(--cream); }
+
+/* ── PRODUCT CARD ── */
+.product-card { cursor: pointer; }
+.product-img  { transition: transform .4s ease; }
+.product-card:hover .product-img { transform: scale(1.04); }
+.stars { color: var(--accent); font-size: 12px; }
+
+/* ── BUTTONS ── */
+.btn-squared { border-radius: 0; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; }
+
+/* ── LINK UNDERLINE ── */
+.link-underline {
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--dark);
+  text-decoration: none;
+  border-bottom: 1px solid var(--dark);
+  padding-bottom: 2px;
+  transition: color .2s, border-color .2s;
+}
+.link-underline:hover { color: var(--accent); border-color: var(--accent); }
+
+/* ── FEATURED ── */
+.featured-text-col { min-height: 420px; }
+.featured-img { height: 420px; object-fit: cover; display: block; }
+
+/* ── EDITORIAL ── */
+.editorial-row   { min-height: 420px; }
+.editorial-img-col { overflow: hidden; min-height: 420px; }
+.editorial-img   { height: 100%; min-height: 420px; object-fit: cover; }
+.editorial-hr    { width: 48px; border-color: var(--dark); border-width: 1px; opacity: 1; }
+
+/* ── TESTIMONIAL ── */
+.avatar-circle {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  background: #d5d0c8;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 22px; color: #fff;
+}
+
+.testimonial-text {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-size: clamp(15px, 1.8vw, 20px);
+  line-height: 1.7;
+  color: var(--dark);
+}
+
+.testimonial-indicators { position: static; margin-top: 24px; }
+.testimonial-indicators [data-bs-target] {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--dark);
+  border: none; opacity: .3;
+}
+.testimonial-indicators .active { opacity: 1; }
+
+/* ── FOOTER ── */
+.footer-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer-links li { margin-bottom: 8px; }
+.footer-links a  { color: #888; text-decoration: none; font-size: 13px; transition: color .2s; }
+.footer-links a:hover { color: var(--accent); }
+
+.footer-social a { color: #888; font-size: 16px; transition: color .2s; }
+.footer-social a:hover { color: var(--accent); }
+
+.newsletter-input {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  color: #fff;
+  border-radius: 0;
+  font-size: 12px;
+}
+.newsletter-input::placeholder { color: #555; }
+.newsletter-input:focus { background: #1e1e1e; color: #fff; box-shadow: none; border-color: #555; }
+
+.newsletter-btn {
+  border-radius: 0;
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
